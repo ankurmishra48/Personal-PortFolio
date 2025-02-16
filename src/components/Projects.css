@@ -1,0 +1,87 @@
+/* projects.css */
+
+/* Container */
+.container {
+    max-width: 1200px;
+  }
+  
+  /* Heading */
+  h2 {
+    letter-spacing: 1px;
+  }
+  
+  /* Divider */
+  hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Project Image */
+  .project-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Category Badge */
+  .category-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #14b8a6; /* Tailwind teal-600 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Technologies Tags */
+  .tech-tag {
+    background: #e2e8f0;
+    color: #1e293b;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button */
+  .view-project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #14b8a6;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .view-project-btn:hover {
+    background: #0d9488;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
