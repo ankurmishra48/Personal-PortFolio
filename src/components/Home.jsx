@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaTelegram, FaGithub, FaInstagram } from 'react-icons/fa';
 import { ReactTyped } from 'react-typed';
-import pic from "../../public/ankur.jpg";
-import Resume from "../../public/AnkurMishraResume.pdf";
+import pic from "../../public/ankur.jpeg";
+import Resume from "../../public/ANKUR_MISHRA_CV.pdf";
 import Contact from './Contact';  
 
 function Home() {
@@ -100,7 +100,7 @@ function Home() {
                  hover:bg-gray-700 hover:scale-105 transform 
                  transition-all duration-300 shadow-md hover:shadow-lg"
       href={Resume}
-      download="Ankur_Mishra_Resume.pdf"
+      download="ANKUR_MISHRA_CV.pdf"
     >
       My Resume
     </a>

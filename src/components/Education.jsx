@@ -9,13 +9,13 @@ import "./Education.css";
 
 const educationData = [
   {
-    degree: "MCA - Computers",
-    year: "2024 - Present",
+    degree: "MCA - Computer Application",
+    year: "2024 - 2026",
     institution: "Vellore Institute of Technology",
-    grade: "CGPA: 8.1/10",
+    grade: "CGPA: 8.95/10",
   },
   {
-    degree: "BCA - Computers",
+    degree: "BCA - Computer Application",
     year: "2021 - 2024",
     institution: "Dr Ram Manohar Lohia Avadh University, Faizabad",
     grade: "78.1%",
