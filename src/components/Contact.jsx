@@ -33,18 +33,20 @@ function Contact() {
   };
 
   return (
-    <div name="Contact" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
-      {/* Toaster for notifications */}
+<div
+  name="Contact"
+  className="w-full px-2"
+>      {/* Toaster for notifications */}
       <Toaster />
 
       <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
       <span>Please fill out the form below to contact me</span>
 
       <div className="flex flex-col items-center justify-center mt-5">
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="bg-slate-200 w-96 px-8 py-6 rounded-xl"
-        >
+      <form
+  onSubmit={handleSubmit(onSubmit)}
+  className="bg-slate-200 w-full max-w-md mx-auto px-8 py-6 rounded-xl"
+>
           <h1 className="text-xl font-semibold mb-4">Send Your Message</h1>
 
           {/* Full Name Input */}

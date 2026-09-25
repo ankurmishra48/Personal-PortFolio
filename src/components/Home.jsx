@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaTelegram, FaGithub, FaInstagram } from 'react-icons/fa';
 import { ReactTyped } from 'react-typed';
-import pic from "../../public/ankur.jpeg";
+import pic from "../../public/ankurr.png";
 import Resume from "../../public/ANKUR_MISHRA_CV.pdf";
 import Contact from './Contact';  
 
@@ -118,25 +118,38 @@ function Home() {
       </div>
 
       {/*Styled Contact Form Modal */}
-      {showContact && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-[600px] transform transition-all duration-300 scale-100">
-            <h2 className="text-2xl font-bold text-center mb-4">Contact Me</h2>
-            
-            <Contact />  {/* Render Contact form inside modal */}
+{showContact && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 p-4">
 
-            <div className="flex justify-end">
-              <button 
-                className="mt-4 bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition"
-                onClick={() => setShowContact(false)}  
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+    <div className="relative bg-white rounded-xl shadow-2xl w-full max-w-[650px] max-h-[90vh] overflow-y-auto">
 
+      {/* Close Button */}
+      <button
+        onClick={() => setShowContact(false)}
+        className="absolute top-4 right-4 z-50 bg-red-600 text-white 
+                   w-9 h-9 rounded-full flex items-center justify-center 
+                   text-xl font-bold hover:bg-red-700 
+                   transition-all duration-300 hover:scale-110"
+        aria-label="Close contact form"
+      >
+        ×
+      </button>
+
+      {/* Modal Heading */}
+      <div className="pt-8 px-6">
+        <h2 className="text-2xl font-bold text-center">
+          Contact Me
+        </h2>
+      </div>
+
+      {/* Contact Form */}
+      <div className="px-4 pb-6">
+        <Contact />
+      </div>
+
+    </div>
+  </div>
+)}
       <br />
       <hr />
     </>
